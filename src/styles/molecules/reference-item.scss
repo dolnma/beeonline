@@ -1,0 +1,44 @@
+.reference-item {
+  padding: rem-calc(10) 0;
+  @include break(lg) {
+    padding: rem-calc(40) 0;
+  }
+
+  &__img {
+    img {
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__content {
+    &__text {
+      font-size: rem-calc(16);
+      line-height: rem-calc(25);
+      position: relative;
+      p {
+        position: relative;
+        z-index: 2;
+      }
+      .quot {
+        z-index: 1;
+      }
+    }
+
+    &__logo {
+      padding: rem-calc(20) 0;
+      img {
+        max-width: 45vh;
+      }
+    }
+
+    &__person {
+      font-size: rem-calc(15);
+      &__title {
+        font-size: rem-calc(20);
+        padding: rem-calc(5) 0;
+      }
+    }
+  }
+}

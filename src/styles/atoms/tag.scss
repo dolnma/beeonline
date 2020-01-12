@@ -1,0 +1,10 @@
+.tag {
+  text-transform: uppercase;
+  padding: rem-calc(10);
+  width: auto;
+
+  &--secondary {
+    background-color: $color-secondary;
+    color: $white;
+  }
+}

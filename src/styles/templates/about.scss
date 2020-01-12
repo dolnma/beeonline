@@ -1,0 +1,16 @@
+.about {
+  background-image: url("../../images/about_bg.svg");
+  background-position: 60%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__img {
+    font-size: rem-calc(30);
+    font-weight: bold;
+    color: $color-primary;
+
+    img {
+      height: rem-calc(400);
+    }
+  }
+}

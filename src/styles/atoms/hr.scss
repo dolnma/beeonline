@@ -1,0 +1,5 @@
+hr {
+  &.secondary {
+    border-top: rem-calc(1) solid $color-secondary;
+  }
+}

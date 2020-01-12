@@ -1,0 +1,21 @@
+.color {
+   &--primary {
+     color: $color-primary;
+   }
+   &--secondary {
+     color: $color-secondary;
+   }
+   &--third {
+     color: $color-third;
+   }
+
+  &--gray {
+    color: $gray;
+  }
+  &--black {
+    color: $black;
+  }
+  &--white {
+    color: $white;
+  }
+}

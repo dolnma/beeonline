@@ -1,0 +1,27 @@
+.hover {
+  &--primary {
+    a:hover {
+      color: $color-primary;
+    }
+  }
+  &--secondary {
+    a:hover {
+      color: $color-secondary;
+    }
+  }
+  &--third {
+    a:hover {
+      color: $color-third;
+    }
+  }
+  &--fourth {
+    a:hover {
+      color: $color-fourth;
+    }
+  }
+  &--fifth {
+    a:hover {
+      color: $color-fifth;
+    }
+  }
+}

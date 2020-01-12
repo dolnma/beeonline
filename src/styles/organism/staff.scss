@@ -1,0 +1,20 @@
+.staff {
+  padding-bottom: rem-calc(30);
+  background-image: url("../../images/about-staff_bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include break(sm) {
+    padding-bottom: rem-calc(100);
+  }
+
+  .staff-item {
+    @include break(lg) {
+      &:nth-child(2n) {
+        bottom: rem-calc(-100);
+      }
+    }
+  }
+
+
+}

@@ -1,0 +1,166 @@
+.header {
+  background-color: #fff;
+  height: rem-calc(70);
+  width: 100%;
+
+  position: relative;
+  z-index: 3;
+}
+
+.header ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  @include break(md) {
+    display: flex;
+    align-items: center;
+    height: rem-calc(80)
+  }
+}
+
+.header ul li {
+  background-color: white;
+}
+
+.header li a {
+  font-weight: bold;
+  display: block;
+  padding: 20px 20px;
+  color: $color-fifth;
+  text-decoration: none;
+  &:hover {
+    color: $color-third;
+  }
+
+  @include break(sm) {
+    padding: rem-calc(10);
+  }
+  @include break(lg) {
+    padding: rem-calc(20);
+  }
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+  float: left;
+  max-width: 20%;
+  font-size: 2em;
+  padding: rem-calc(15) 0 0;
+  height: rem-calc(70);
+  text-decoration: none;
+
+  img {
+    max-width: 25vh;
+    height: rem-calc(25);
+    @include break(lg) {
+      max-width: 30vh;
+      height: rem-calc(35);
+    }
+  }
+
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+  @include break(md) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: rem-calc(34) rem-calc(20);
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: rem-calc(300);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    height: rem-calc(70);
+    max-height: none;
+    display: flex;
+    align-items: center;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}

@@ -1,0 +1,22 @@
+.navbar {
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  li {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    height: rem-calc(50);
+    padding: rem-calc(20);
+
+    a {
+      color: $color-fifth;
+      text-decoration: none;
+      &:hover {
+        color: $color-third;
+      }
+    }
+  }
+}

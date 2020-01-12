@@ -1,0 +1,21 @@
+.footer {
+  a {
+    color: $color-secondary;
+    text-decoration: none;
+  }
+  .logo {
+    img {
+      max-width: 30vh;
+      height: rem-calc(30);
+    }
+    height: rem-calc(32);
+  }
+  .contact {
+    font-size: rem-calc(17);
+  }
+  &__social {
+    img {
+      max-height: rem-calc(40);
+    }
+  }
+}

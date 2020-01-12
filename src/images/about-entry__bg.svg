@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 2274 347" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,171,-79.9997)">
+        <path id="Obdélník-31" serif:id="Obdélník 31" d="M2073,206L-141,80C-157.568,80 -171,93.431 -171,110L-171,396C-171,412.568 -157.568,426 -141,426L2073,426C2089.57,426 2103,412.568 2103,396L2103,236C2103,219.431 2089.57,206 2073,206Z" style="fill:rgb(164,0,93);"/>
+        <clipPath id="_clip1">
+            <path id="Obdélník-311" serif:id="Obdélník 31" d="M2073,206L-141,80C-157.568,80 -171,93.431 -171,110L-171,396C-171,412.568 -157.568,426 -141,426L2073,426C2089.57,426 2103,412.568 2103,396L2103,236C2103,219.431 2089.57,206 2073,206Z"/>
+        </clipPath>
+        <g clip-path="url(#_clip1)">
+            <path id="Obdélník-40" serif:id="Obdélník 40" d="M772.36,663.194C772.36,663.194 672.9,477.378 867.791,442.195C1026.61,413.525 1040.76,398.124 1120.86,321.449C1577.7,-115.841 2317.75,-857.429 2317.75,-857.429L2548.36,-548.883L1002.96,971.741L772.36,663.194Z" style="fill:white;"/>
+        </g>
+    </g>
+</svg>

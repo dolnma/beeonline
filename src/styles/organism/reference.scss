@@ -1,0 +1,28 @@
+.reference {
+
+  &__bg {
+    @include break(lg) {
+      background-image: url("../../images/reference_bg.svg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__bg--circles {
+    @include break(lg) {
+      background-image: url("../../images/reference_bg2.svg");
+      background-size: cover;
+      background-position: rem-calc(80) 60%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__workabout {
+    color: $gray;
+    font-weight: bold;
+    text-align: center;
+    font-size: rem-calc(20);
+    line-height: rem-calc(28);
+  }
+}

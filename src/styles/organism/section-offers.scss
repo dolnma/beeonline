@@ -1,0 +1,47 @@
+.section-offers {
+  background-color: $color-secondary;
+
+  @include break(md) {
+    background-image: url("../../images/hp_stripes.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: rem-calc(80) 0 rem-calc(30);
+    background-color: transparent;
+  }
+
+  &__content {
+    color: $white;
+    font-size: rem-calc(20);
+    font-weight: bold;
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    li{
+      position: relative;
+      padding: rem-calc(10) rem-calc(20);
+    }
+    li:before{
+      content: '';
+      width: rem-calc(14);
+      height: rem-calc(20);
+      position: absolute;
+      background-image: url("../../images/li_style.svg");
+      background-size: cover;
+      background-position: center;
+      left: 0;
+      top: 30%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__image {
+    background-image: url("../../images/homepage_1@2x.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: rem-calc(500);
+  }
+}

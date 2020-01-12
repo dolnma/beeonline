@@ -1,0 +1,66 @@
+@import "~normalize.css";
+@import "~reset-css";
+@import "~bootstrap/scss/bootstrap-grid";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/tables";
+@import "variables";
+@import "_mixins/rem-calc";
+
+@import "atoms/fonts";
+@import "atoms/color";
+@import "atoms/li";
+@import "atoms/link";
+@import "atoms/hover";
+@import "atoms/heading";
+@import "atoms/bg";
+@import "atoms/table";
+@import "atoms/tag";
+@import "atoms/hr";
+
+@import "molecules/logo";
+@import "molecules/navbar";
+@import "molecules/btn";
+@import "molecules/box-service";
+@import "molecules/reference-item";
+@import "molecules/quot";
+@import "molecules/staff-item";
+@import "molecules/block-title";
+
+@import "organism/header";
+@import "organism/footer";
+@import "organism/section-offers";
+@import "organism/section-services";
+@import "organism/reference-entry";
+@import "organism/reference";
+@import "organism/about-entry";
+@import "organism/about-about";
+@import "organism/staff";
+@import "organism/tooltip";
+
+@import "templates/about";
+
+body {
+  font-family: "Maven Pro", serif;
+  color: #000;
+}
+a:hover,
+a:active,
+a:focus,
+input:hover,
+input:active,
+input:focus,
+button:hover,
+button:active,
+button:focus {
+  outline: 0;
+}
+
+p {
+  font-size: rem-calc(20);
+  line-height: rem-calc(27);
+}
+
+strong {
+  font-weight: bold;
+}

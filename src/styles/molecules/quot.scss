@@ -1,0 +1,18 @@
+.quot {
+  position: absolute;
+  background-image: url("../../images/quot.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: rem-calc(46);
+  width: rem-calc(67);
+
+  &--right {
+    right: 0;
+    top: rem-calc(-20);
+  }
+  &--left {
+    left: rem-calc(-20);
+    bottom: rem-calc(-10);
+  }
+}

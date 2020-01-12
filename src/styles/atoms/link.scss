@@ -1,0 +1,27 @@
+.link {
+  &--primary {
+    a {
+      color: $color-primary;
+    }
+  }
+  &--secondary {
+    a {
+      color: $color-secondary;
+    }
+  }
+  &--third {
+    a {
+      color: $color-third;
+    }
+  }
+  &--fourth {
+    a {
+      color: $color-fourth;
+    }
+  }
+  &--fifth {
+    a {
+      color: $color-fifth;
+    }
+  }
+}
