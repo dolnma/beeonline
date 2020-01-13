@@ -1,5 +1,5 @@
 .header {
-  background-color: #fff;
+  background-color: $color-primary;
   height: rem-calc(70);
   width: 100%;
 
@@ -21,17 +21,18 @@
 }
 
 .header ul li {
-  background-color: white;
+  background-color: $color-primary;
 }
 
 .header li a {
   font-weight: bold;
   display: block;
   padding: 20px 20px;
-  color: $color-fifth;
+  color: $color-secondary;
   text-decoration: none;
+  text-transform: uppercase;
   &:hover {
-    color: $color-third;
+    color: $color-fifth;
   }
 
   @include break(sm) {
@@ -44,7 +45,6 @@
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: #f4f4f4;
 }
 
 .header .logo {
@@ -53,7 +53,6 @@
   float: left;
   max-width: 20%;
   font-size: 2em;
-  padding: rem-calc(15) 0 0;
   height: rem-calc(70);
   text-decoration: none;
 
@@ -74,6 +73,8 @@
   clear: both;
   max-height: 0;
   transition: max-height .2s ease-out;
+  margin-left: rem-calc(-15);
+  margin-right: rem-calc(-15);
   @include break(md) {
     display: flex;
     align-items: center;

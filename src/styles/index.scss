@@ -21,27 +21,12 @@
 @import "molecules/logo";
 @import "molecules/navbar";
 @import "molecules/btn";
-@import "molecules/box-service";
-@import "molecules/reference-item";
-@import "molecules/quot";
-@import "molecules/staff-item";
-@import "molecules/block-title";
 
 @import "organism/header";
 @import "organism/footer";
-@import "organism/section-offers";
-@import "organism/section-services";
-@import "organism/reference-entry";
-@import "organism/reference";
-@import "organism/about-entry";
-@import "organism/about-about";
-@import "organism/staff";
-@import "organism/tooltip";
-
-@import "templates/about";
 
 body {
-  font-family: "Maven Pro", serif;
+  font-family: "Roboto", serif;
   color: #000;
 }
 a:hover,
