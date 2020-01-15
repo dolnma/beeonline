@@ -1,0 +1,22 @@
+.about-line {
+  height: rem-calc(650);
+  background-image: url("../../images/about-line_bg.jpg");
+  background-position: center;
+  background-size: cover;
+
+  h2 {
+    font-weight: bold;
+    color: $color-primary;
+    font-size: rem-calc(75);
+    text-transform: uppercase;
+  }
+
+  p {
+    text-align: center;
+    color: $white;
+    text-transform: uppercase;
+    border-top: rem-calc(2) solid $color-primary;
+    padding: rem-calc(40) 0 0 0;
+    font-size: rem-calc(16);
+  }
+}

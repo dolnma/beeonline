@@ -1,0 +1,22 @@
+.services-section {
+  height: rem-calc(650);
+  background: $white;
+
+  &__title {
+    h2 {
+      font-weight: bold;
+      color: $color-secondary;
+      font-size: rem-calc(75);
+      text-transform: uppercase;
+    }
+
+    p {
+      text-align: center;
+      color: $color-secondary;
+      text-transform: uppercase;
+      border-top: rem-calc(2) solid $color-secondary;
+      padding: rem-calc(20) 0 0 0;
+      font-size: rem-calc(16);
+    }
+  }
+}

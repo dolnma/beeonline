@@ -1,0 +1,27 @@
+.service-item {
+  padding: rem-calc(30);
+
+  &__img {
+    img {
+      height: rem-calc(76);
+    }
+  }
+
+  h3 {
+    padding: rem-calc(10) 0;
+    text-align: center;
+    font-weight: bold;
+    color: $color-secondary;
+    font-size: rem-calc(32);
+    text-transform: uppercase;
+  }
+
+  &__desc {
+    text-align: center;
+    color: $color-secondary;
+    text-transform: uppercase;
+    border-top: rem-calc(2) solid $color-secondary;
+    padding: rem-calc(10) 0 0 0;
+    font-size: 1rem;
+  }
+}

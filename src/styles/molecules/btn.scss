@@ -1,14 +1,16 @@
 .btn {
   padding: rem-calc(20) rem-calc(60);
   text-decoration: none;
-  border-radius: rem-calc(35);
   border: none;
   cursor: pointer;
 }
 .btn--primary {
-  color: white;
-  background: $color-primary;
+  color: $color-primary;
+  background: transparent;
+  border: rem-calc(4) solid $color-primary;
+  text-transform: uppercase;
   &:hover {
-    background: darken($color-primary, 15%);
+    background: $color-primary;
+    color: $color-secondary;
   }
 }

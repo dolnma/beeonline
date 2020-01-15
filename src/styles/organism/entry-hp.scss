@@ -1,0 +1,48 @@
+.entry-hp {
+  height: rem-calc(850);
+  width: 100%;
+  background-color: $color-primary;
+  background-image: url("../../images/entry-hp_bg.jpg");
+  background-position: top;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+
+  &:after{
+    z-index: 1;
+    content:'';
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: rem-calc(1200) solid $color-primary;
+    border-left: rem-calc(900) solid transparent;
+  }
+
+  &__logo {
+    position: absolute;
+    right: rem-calc(50);
+    z-index: 2;
+    span {
+      text-transform: uppercase;
+      font-size: rem-calc(30);
+    }
+    img {
+      height: rem-calc(70);
+    }
+  }
+
+  h1 {
+    color: $white;
+    font-size: rem-calc(150);
+    text-transform: uppercase;
+  }
+  p {
+    color: $white;
+    text-transform: uppercase;
+    border-top: rem-calc(2) solid $white;
+    padding: rem-calc(40) 0 0 0;
+    font-size: rem-calc(16);
+  }
+}

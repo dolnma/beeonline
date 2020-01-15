@@ -21,9 +21,13 @@
 @import "molecules/logo";
 @import "molecules/navbar";
 @import "molecules/btn";
+@import "molecules/service-item";
 
 @import "organism/header";
 @import "organism/footer";
+@import "organism/entry-hp";
+@import "organism/about-line";
+@import "organism/services-section";
 
 body {
   font-family: "Roboto", serif;
