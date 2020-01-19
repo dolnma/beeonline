@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 76 77" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-581,-2230)">
+        <path id="bg-ico" serif:id="bg ico" d="M619,2230C639.987,2230 657,2247.01 657,2268C657,2288.99 639.987,2306 619,2306C598.013,2306 581,2288.99 581,2268C581,2247.01 598.013,2230 619,2230Z" style="fill:rgb(35,35,35);"/>
+        <path id="Web" d="M623.5,2282L614.5,2282C613.672,2282 613,2281.33 613,2280.5C613,2279.67 613.672,2279 614.5,2279L623.5,2279C624.328,2279 625,2279.67 625,2280.5C625,2281.33 624.33,2282 623.5,2282ZM633,2277L605,2277C603.895,2277 603,2276.1 603,2275L603,2256C603,2254.89 603.895,2254 605,2254L633,2254C634.104,2254 635,2254.89 635,2256L635,2275C635,2276.1 634.106,2277 633,2277ZM632,2257L606,2257L606,2274L632,2274L632,2257Z" style="fill:white;"/>
+    </g>
+</svg>
