@@ -1,0 +1,19 @@
+<form action="mail.php" method="post" class="form__wrapper" id="contactForm">
+    <div class="field float-container">
+        <label for="name">Name *</label>
+        <input type="text" name="name" id="name" data-placeholder="Name *" required>
+    </div>
+    <div class="field float-container">
+        <label for="email">E-mail address *</label>
+        <input type="email" name="email" id="email" data-placeholder="E-mail address *" required>
+    </div>
+    <input hidden type="text" name="idk" id="idk">
+    <div class="field float-container">
+        <label for="phone">Contact number (optional)</label>
+        <input type="tel" name="phone" id="phone" data-placeholder="+420 777 777 777">
+    </div>
+    <div class="field mt-4">
+        <textarea name="message" id="message" rows="4" placeholder="Message" required></textarea>
+    </div>
+    <button type="submit" class="btn btn--primary mt-3">Ozvěte se mi</button>
+</form>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 62 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-683,-7640)">
+        <path id="bg-ico" serif:id="bg ico" d="M714,7640C731.121,7640 745,7653.88 745,7671C745,7688.12 731.121,7702 714,7702C696.879,7702 683,7688.12 683,7671C683,7653.88 696.879,7640 714,7640Z" style="fill:rgb(255,203,5);"/>
+        <path id="facebook" d="M716,7666.66L716,7662.78C716,7661.71 716.896,7660.84 718,7660.84L720,7660.84L720,7656L716,7656C712.686,7656 710,7658.6 710,7661.81L710,7666.66L706,7666.66L706,7671.5L710,7671.5L710,7687L716,7687L716,7671.5L720,7671.5L722,7666.66L716,7666.66Z" style="fill-rule:nonzero;"/>
+    </g>
+</svg>

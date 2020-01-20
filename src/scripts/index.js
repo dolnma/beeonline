@@ -1,31 +1,42 @@
 import '../styles/index.scss'
-import UAParser from 'ua-parser-js'
 import $ from 'jquery'
-
+import UAParser from 'ua-parser-js'
+import './form'
 const parser = new UAParser()
 let parserResult = parser.getResult()
+import { initFloatLabel } from './forms'
+import config from './config'
+import {initMap} from "./map";
+import {formInit} from "./form";
+import lozad from "lozad";
 
-console.log(parser.getResult())
-
-$('.box-service').click(function() {
-    $('.hover-info').hide()
-    let getDataId = $(this).data('infoid')
-    let infoEl = $('.hover-info[data-info="' + getDataId + '"]')
-    let infoId = $('#services-info')
-    infoEl.show()
-    if (parserResult.os.name === "iOS") {
-        infoId.scrollIntoView()
-    }
-})
-
-$('.box-service').mouseover(function() {
-    $('.hover-info').hide()
-    let getDataId = $(this).data('infoid')
-    let infoEl = $('.hover-info[data-info="' + getDataId + '"]')
-    infoEl.show()
-})
+const observer = lozad()
+observer.observe()
 
 $(function() {
+    initFloatLabel.init()
+    initMap(16, config.mapLang)
+    formInit('#contactForm')
+
     $('.hover-info').hide()
     $('.hover-info').first().show()
+
+    $('.box-service').click(function() {
+        $('.hover-info').hide()
+        let getDataId = $(this).data('infoid')
+        let infoEl = $('.hover-info[data-info="' + getDataId + '"]')
+        let infoId = $('#services-info')
+        infoEl.show()
+        if (parserResult.os.name === "iOS") {
+            infoId.scrollIntoView()
+        }
+    })
+
+    $('.box-service').mouseover(function() {
+        $('.hover-info').hide()
+        let getDataId = $(this).data('infoid')
+        let infoEl = $('.hover-info[data-info="' + getDataId + '"]')
+        infoEl.show()
+    })
 })
+

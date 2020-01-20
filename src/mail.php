@@ -3,57 +3,48 @@
 $errorMSG = "";
 
 // NAME
-if (empty($_POST["firstname"])) {
-    $errorMSG = "Jméno je povinné ";
+if (empty($_POST["name"])) {
+    $errorMSG = "Name is required";
 } else {
-    $firstname = $_POST["firstname"];
-}
-
-if (empty($_POST["surname"])) {
-    $errorMSG = "Příjmení je povinné ";
-} else {
-    $surname = $_POST["surname"];
+    $name = $_POST["name"];
 }
 
 if (empty($_POST["phone"])) {
-    $errorMSG = "Telefon je povinný ";
+    $errorMSG = "Phone is required ";
 } else {
     $phone = $_POST["phone"];
 }
 
 // EMAIL
 if (empty($_POST["email"])) {
-    $errorMSG .= "Email je povinný ";
+    $errorMSG .= "email is requiredy";
 } else {
     $email = $_POST["email"];
 }
 
 // MESSAGE
 if (empty($_POST["message"])) {
-    $errorMSG .= "Zpráva je povinná ";
+    $errorMSG .= "Message is requiredy";
 } else {
     $message = $_POST["message"];
 }
 
 //Add your email here
 $EmailTo = "info@performio.cz";
-$Subject = "Nová zpráva z webu Performio.cz od ".$firstname." ".$surname."";
+$Subject = "New message from website Beeonline from $name";
 
 // prepare email body text
 $Body = "";
-$Body .= "Jméno: ";
-$Body .= $firstname;
+$Body .= "Name: ";
+$Body .= $name;
 $Body .= "\n";
-$Body .= "Příjmení: ";
-$Body .= $surname;
-$Body .= "\n";
-$Body .= "Telefon: ";
+$Body .= "Phone: ";
 $Body .= $phone;
 $Body .= "\n";
 $Body .= "Email: ";
 $Body .= $email;
 $Body .= "\n";
-$Body .= "Zpráva: ";
+$Body .= "Message: ";
 $Body .= $message;
 $Body .= "\n";
 
@@ -65,7 +56,7 @@ if ($success && $errorMSG == ""){
     echo "success";
 }else{
     if($errorMSG == ""){
-        echo "Odeslání nebylo úspěšné";
+        echo "Error sending message";
     } else {
         echo $errorMSG;
     }

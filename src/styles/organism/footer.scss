@@ -1,4 +1,8 @@
 .footer {
+  background-color: $color-secondary;
+  color: $white;
+  padding: rem-calc(150) 0 rem-calc(30);
+
   a {
     color: $color-secondary;
     text-decoration: none;
@@ -15,7 +19,7 @@
   }
   &__social {
     img {
-      max-height: rem-calc(40);
+      max-height: rem-calc(60);
     }
   }
 }

@@ -23,6 +23,7 @@
 @import "molecules/btn";
 @import "molecules/service-item";
 @import "molecules/service-info";
+@import "molecules/done";
 
 @import "organism/header";
 @import "organism/footer";
@@ -31,6 +32,7 @@
 @import "organism/services-section";
 @import "organism/section-service";
 @import "organism/section-about";
+@import "organism/contact-form";
 
 body {
   font-family: "Roboto", serif;

@@ -1,6 +1,8 @@
 <%= require('html-loader!./header.html') %>
 <main>
-    <section class="entry-hp row align-items-center px-5">
+    <section class="entry-hp align-items-center px-5">
+        <div class="row">
+
         <div class="col-7">
             <h1>
                 Website<br>
@@ -24,8 +26,11 @@
                 <span>Website design & media</span>
             </div>
         </div>
+        </div>
     </section>
-    <section class="about-line row align-items-center justify-content-center">
+    <section class="about-line">
+        <div class="row align-items-center justify-content-center">
+
         <div class="py-1 text-center col-9">
             <h2 class="pb-4">About us</h2>
             <p class="about-line__info">
@@ -35,8 +40,11 @@
                 We pride ourselves on providing premium designs at affordable prices, and believe that it’s our friendly approach that helps a simple idea develop into a digital masterpiece.<br>
             </p>
         </div>
+        </div>
     </section>
-    <section class="services-section row align-items-center justify-content-center">
+    <section class="services-section">
+        <div class="row align-items-center justify-content-center">
+
         <div class="py-5 text-center col-9 services-section__title">
             <h2 class="pb-4">What we do</h2>
             <p class="about-line__info">
@@ -95,6 +103,7 @@
                 </div>
 
             </div>
+        </div>
         </div>
     </section>
 
@@ -186,32 +195,27 @@
         </div>
     </section>
 
+    <section class="section-about section-about--white">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h3 class="pb-3">Contact us!</h3>
+                    <p>
+                        To enquire about any of our services, please use our fast & friendly contact form.
+                        It’s as good as having our personal email address, anything sent through here gets sent straight to a team member.
+                        So rest assured that we have definitely received your message, and we almost always reply within 1 business day.
+                    </p>
+                </div>
+                <div id="contact-form" class="contact-form col-6 ">
+                    <%= require('html-loader!./contact-form.html') %>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </main>
 
-<footer class="footer d-flex flex-column py-5">
-    <div class="container">
-
-        <div class="col-12 py-4">
-            <div class="row">
-                <div class="logo col-2">
-                    <a href="#">
-                        <img src="images/logo.svg" alt="logo"/>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-12 py-5">
-            <div class="row">
-                <div class="col-12">
-                    Copyright © 2020 BeeOnline
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-</footer>
+<%= require('html-loader!./footer.html') %>
 
 </body>
 </html>

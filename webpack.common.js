@@ -2,6 +2,7 @@ const Path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ImageminPlugin = require('imagemin-webpack-plugin').default;
 
 module.exports = {
   entry: {
@@ -21,6 +22,14 @@ module.exports = {
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin([
       { from: Path.resolve(__dirname, 'src/images'), to: Path.resolve(__dirname, 'dist/images') }
+    ]),
+    new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i }),
+    new CopyWebpackPlugin([
+      {
+        context: __dirname + '/src',
+        from: './*.php',
+        to: __dirname + '/dist'
+      },
     ]),
     new HtmlWebpackPlugin({
       filename: 'index.html',
