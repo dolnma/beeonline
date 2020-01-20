@@ -1,0 +1,88 @@
+.contact-form {
+  background-color: $gray-150;
+
+  h2 {
+    font-size: rem-calc(35);
+    @include break(xs) {
+      font-size: rem-calc(42);
+    }
+  }
+
+  .form {
+    position: relative;
+
+    &__wrapper {
+      padding: rem-calc(40) rem-calc(20);
+
+      .field .click-input__icon {
+        padding: rem-calc(10);
+        top: rem-calc(15);
+        right: rem-calc(40);
+        width: auto;
+      }
+
+      .btn {
+        padding: 1rem 2rem;
+        width: 100%;
+      }
+
+      .field {
+        display: flex;
+        flex-flow: column-reverse;
+      }
+
+      .label__check {
+        font-size: rem-calc(18);
+      }
+
+      .label__text {
+        font-size: rem-calc(12);
+      }
+
+      textarea {
+        background-color: $gray-300;
+        border: none;
+        font-size: rem-calc(14);
+        outline: 0;
+        padding: rem-calc(15) rem-calc(20) rem-calc(15);
+        width: 100%;
+        border-radius: rem-calc(25);
+      }
+
+      /** float container */
+      .float-container {
+        box-sizing: border-box;
+        margin-bottom: rem-calc(8);
+        position: relative;
+
+        input {
+          background-color: $gray-300;
+          border: none;
+          font-size: rem-calc(14);
+          outline: 0;
+          padding: rem-calc(15) rem-calc(20) rem-calc(15);
+          width: 100%;
+          border-radius: rem-calc(25);
+        }
+
+        label {
+          font-size: rem-calc(14);
+          position: absolute;
+          transform-origin: top left;
+          top: 0;
+          padding-left: rem-calc(20);
+          transform: translate(0, rem-calc(16)) scale(1);
+          transition: all .1s ease-in-out; //speed
+        }
+
+        /** active label */
+        &.active {
+          label {
+            //move the x coordinate and reduce size
+            transform: translate(rem-calc(5), rem-calc(3)) scale(.75);
+          }
+        }
+      }
+    }
+  }
+}

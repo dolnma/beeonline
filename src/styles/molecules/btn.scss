@@ -3,25 +3,41 @@
   text-decoration: none;
   border: none;
   cursor: pointer;
-}
-.btn--primary {
-     color: $color-primary;
-     background: transparent;
-     border: rem-calc(4) solid $color-primary;
-     text-transform: uppercase;
-     &:hover {
-       background: $color-primary;
-       color: $color-secondary;
-     }
-}
 
-.btn--secondary {
-  color: $color-secondary;
-  background: transparent;
-  border: rem-calc(4) solid $color-secondary;
-  text-transform: uppercase;
-  &:hover {
-    background: $color-secondary;
+  &--primary {
     color: $color-primary;
+    background: transparent;
+    border: rem-calc(4) solid $color-primary;
+    text-transform: uppercase;
+
+    &:hover {
+      background: $color-primary;
+      color: $color-secondary;
+    }
   }
+
+  &--secondary {
+    color: $color-secondary;
+    background: transparent;
+    border: rem-calc(4) solid $color-secondary;
+    text-transform: uppercase;
+
+    &:hover {
+      background: $color-secondary;
+      color: $color-primary;
+    }
+  }
+
+  &--fourth {
+    color: $color-fourth;
+    background: transparent;
+    border: rem-calc(4) solid $color-fourth;
+    text-transform: uppercase;
+
+    &:hover {
+      background: $color-fourth;
+      color: $color-secondary;
+    }
+  }
+
 }

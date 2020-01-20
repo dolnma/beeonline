@@ -15,7 +15,21 @@
   }
 
   &--secondary {
+    background-color: $color-secondary;
+    color: $color-fourth;
+    h3 {
+      color: rgba(255,204,5,0.4);
+    }
+    .service-info {
+      &__desc {
+        border-top: rem-calc(3) solid $color-fourth;
+      }
+    }
+  }
+
+  &--gray {
     background-color: $gray-light;
+    color: $color-secondary;
     h3 {
       color: rgba(0,0,0,0.4);
     }
