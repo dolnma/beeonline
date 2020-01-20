@@ -1,8 +1,11 @@
 .service-info {
   h4 {
-    font-size: rem-calc(75);
+    font-size: rem-calc(50);
     text-transform: uppercase;
     font-weight: bold;
+    @include break(lg) {
+      font-size: rem-calc(75);
+    }
   }
   &__desc {
     padding-top: rem-calc(15);

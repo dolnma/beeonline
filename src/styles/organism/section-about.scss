@@ -1,10 +1,17 @@
 .section-about {
-  padding: rem-calc(150) 0;
+  padding: rem-calc(30) 0;
   display: flex;
   align-items: center;
+  @include break(lg) {
+    padding: rem-calc(150) 0;
+  }
+
   h3 {
-    font-size: rem-calc(75);
+    font-size: rem-calc(40);
     font-weight: bold;
+    @include break(lg) {
+      font-size: rem-calc(75);
+    }
   }
   h4 {
     font-size: rem-calc(37);

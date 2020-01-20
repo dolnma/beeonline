@@ -1,13 +1,19 @@
 .services-section {
-  padding: rem-calc(100) 0;
+  padding: rem-calc(30) 0;
   background: $white;
+  @include break(lg) {
+    padding: rem-calc(100) 0;
+  }
 
   &__title {
     h2 {
       font-weight: bold;
       color: $color-secondary;
-      font-size: rem-calc(75);
+      font-size: rem-calc(40);
       text-transform: uppercase;
+      @include break(lg) {
+        font-size: rem-calc(75);
+      }
     }
 
     p {

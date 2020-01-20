@@ -1,10 +1,18 @@
 .section-service {
-  padding: rem-calc(80) 0;
+  padding: rem-calc(30) 0;
   display: flex;
   align-items: center;
+  @include break(lg) {
+    padding: rem-calc(80) 0;
+  }
+
   h3 {
-    font-size: rem-calc(450);
+    font-size: rem-calc(250);
     font-weight: bold;
+
+    @include break(lg) {
+      font-size: rem-calc(450);
+    }
   }
 
   &--primary {
