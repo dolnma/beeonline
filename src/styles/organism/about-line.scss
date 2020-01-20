@@ -1,9 +1,13 @@
 .about-line {
   width: 100%;
-  padding: rem-calc(100) 0;
+  padding: rem-calc(60) 0;
   background-image: url("../../images/about-line_bg.jpg");
   background-position: center;
   background-size: cover;
+  @include break(lg) {
+    padding: rem-calc(140) 0;
+  }
+
 
   h2 {
     font-weight: bold;

@@ -5,8 +5,6 @@ import './form'
 const parser = new UAParser()
 let parserResult = parser.getResult()
 import { initFloatLabel } from './forms'
-import config from './config'
-import {initMap} from "./map";
 import {formInit} from "./form";
 import lozad from "lozad";
 
@@ -15,7 +13,6 @@ observer.observe()
 
 $(function() {
     initFloatLabel.init()
-    initMap(16, config.mapLang)
     formInit('#contactForm')
 
     $('.hover-info').hide()
