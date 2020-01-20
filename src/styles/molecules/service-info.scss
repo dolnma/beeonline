@@ -1,0 +1,12 @@
+.service-info {
+  h4 {
+    font-size: rem-calc(75);
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  &__desc {
+    padding-top: rem-calc(15);
+    padding-bottom: rem-calc(10);
+    border-top: rem-calc(3) solid $color-secondary;
+  }
+}

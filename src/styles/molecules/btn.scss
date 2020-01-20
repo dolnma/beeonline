@@ -5,12 +5,23 @@
   cursor: pointer;
 }
 .btn--primary {
-  color: $color-primary;
+     color: $color-primary;
+     background: transparent;
+     border: rem-calc(4) solid $color-primary;
+     text-transform: uppercase;
+     &:hover {
+       background: $color-primary;
+       color: $color-secondary;
+     }
+}
+
+.btn--secondary {
+  color: $color-secondary;
   background: transparent;
-  border: rem-calc(4) solid $color-primary;
+  border: rem-calc(4) solid $color-secondary;
   text-transform: uppercase;
   &:hover {
-    background: $color-primary;
-    color: $color-secondary;
+    background: $color-secondary;
+    color: $color-primary;
   }
 }

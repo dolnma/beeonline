@@ -1,4 +1,23 @@
-.services-section {
-  background-color: $color-fourth;
-  color: $color-secondary;
+.section-service {
+  padding: rem-calc(80) 0;
+  display: flex;
+  align-items: center;
+  h3 {
+    font-size: rem-calc(450);
+    font-weight: bold;
+  }
+
+  &--primary {
+    background-color: $color-fourth;
+    h3 {
+      color: rgba(0,0,0,0.4);
+    }
+  }
+
+  &--secondary {
+    background-color: $gray-light;
+    h3 {
+      color: rgba(0,0,0,0.4);
+    }
+  }
 }
