@@ -30,7 +30,7 @@ if (empty($_POST["message"])) {
 }
 
 //Add your email here
-$EmailTo = "info@performio.cz";
+$EmailTo = "marek.dolnicek@gmail.com";
 $Subject = "New message from website Beeonline from $name";
 
 // prepare email body text
