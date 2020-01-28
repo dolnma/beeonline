@@ -1,0 +1,15 @@
+.page-title {
+  padding: rem-calc(30) 0;
+  @include break(lg) {
+    padding: rem-calc(60) 0;
+  }
+  h1 {
+    font-size: rem-calc(60);
+    text-transform: uppercase;
+  }
+
+  &--white {
+    background-color: white;
+    color: $color-secondary;
+  }
+}

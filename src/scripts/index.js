@@ -1,39 +1,19 @@
 import '../styles/index.scss'
 import $ from 'jquery'
-import UAParser from 'ua-parser-js'
 import './form'
-const parser = new UAParser()
-let parserResult = parser.getResult()
 import { initFloatLabel } from './forms'
-import {formInit} from "./form";
-import lozad from "lozad";
+import {formInit} from "./form"
+import lozad from "lozad"
+import 'lightgallery.js'
 
 const observer = lozad()
 observer.observe()
 
 $(function() {
+    lightGallery(document.getElementById('lightgallery'))
+    lightGallery(document.getElementById('lightgallery2'))
+    lightGallery(document.getElementById('lightgallery3'))
     initFloatLabel.init()
     formInit('#contactForm')
-
-    $('.hover-info').hide()
-    $('.hover-info').first().show()
-
-    $('.box-service').click(function() {
-        $('.hover-info').hide()
-        let getDataId = $(this).data('infoid')
-        let infoEl = $('.hover-info[data-info="' + getDataId + '"]')
-        let infoId = $('#services-info')
-        infoEl.show()
-        if (parserResult.os.name === "iOS") {
-            infoId.scrollIntoView()
-        }
-    })
-
-    $('.box-service').mouseover(function() {
-        $('.hover-info').hide()
-        let getDataId = $(this).data('infoid')
-        let infoEl = $('.hover-info[data-info="' + getDataId + '"]')
-        infoEl.show()
-    })
 })
 
