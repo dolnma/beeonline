@@ -1,128 +1,221 @@
 <%= require('html-loader!./header.html') %>
 <main>
-    <section class="page-title page-title--white text-center">
-        <h1>PORTFOLIO</h1>
+    <section class="entry-hp align-items-center px-5">
+        <div class="row align-items-end">
+
+        <div class="col-12 col-lg-7">
+            <h1>
+                Website<br>
+                Design<br>
+                + Media
+            </h1>
+            <p class="hp-entry__desc">
+                <strong>WEBSITE DESIGN & DIGITAL MEDIA THAT’LL HAVE YOUR BRAND LOOKING AWESOME!</strong><br>
+                Visual Syrup is a small team with a big heart for great design & customer satisfaction.<br>
+                We are 100% Australian owned & operated and are extremely proud of delivering high-end work at affordable prices.
+            </p>
+            <div class="py-3">
+                <a href="#contact-form"></a>
+                    <button class="btn btn--primary">
+                    Get in touch
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="col-12 col-lg-5 d-none d-lg-block">
+            <div class="row flex-column justify-content-end entry-hp__logo text-right">
+                <img src="images/logo.svg" alt="Beeonline"/>
+                <span>Website design & media</span>
+            </div>
+        </div>
+        </div>
     </section>
-    <section class="section-portfolio section-portfolio--gray">
-        <div class="container-fluid px-lg-0">
-            <div class="row d-flex align-items-center w-100 no-gutters">
+    <section class="about-line" id="aboutus">
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-center">
+
+                <div class="py-1 text-center col-12 col-lg-9">
+                    <h2 class="pb-4">About us</h2>
+                    <p class="about-line__info">
+                        <strong>WE ARE AN AUSTRALIAN WEB DESIGN & MEDIA COLLECTIVE THAT STRIVES TO CREATE BRILLIANT CONTENT FOR ANY SIZE BUSINESS</strong><br>
+                        Visual Syrup consists of a small team of thinkers & designers who excel against the restrictive creativity of mundane design.<br>
+                        We enjoy pushing the boundaries of art & technology, and we work hard to occupy the vanguard of quality workmanship in order to deliver exceptional results.<br>
+                        We pride ourselves on providing premium designs at affordable prices, and believe that it’s our friendly approach that helps a simple idea develop into a digital masterpiece.<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services-section">
+        <div class="container-fluid">
+        <div class="row align-items-center justify-content-center">
+
+        <div id="whatwedo" class="py-5 text-center col-12 col-lg-9 services-section__title">
+            <h2 class="pb-4">What we do</h2>
+            <p class="about-line__info">
+                <strong>BESPOKE WEB SITE DESIGN & MEDIA AT AFFORDABLE PRICES</strong><br>
+            </p>
+        </div>
+        <div class="container">
+            <div class="row">
+
+                <div class="service-item col-12 col-lg-4">
+                    <div class="service-item__img text-center">
+                        <img src="images/ico-web.svg">
+                    </div>
+                    <h3>web design</h3>
+                    <p class="service-item__desc">We build responsive websites that look beautiful on any device.</p>
+                </div>
+
+                <div class="service-item col-12 col-lg-4">
+                    <div class="service-item__img text-center">
+                        <img src="images/ico-media.svg">
+                    </div>
+                    <h3>media</h3>
+                    <p class="service-item__desc">We take outstanding photos, and produce awesome videos.</p>
+                </div>
+
+                <div class="service-item col-12 col-lg-4">
+                    <div class="service-item__img text-center">
+                        <img src="images/ico-graphics.svg">
+                    </div>
+                    <h3>graphics</h3>
+                    <p class="service-item__desc">We custom design logo’s & create other nifty looking graphics.</p>
+                </div>
+
+                <div class="service-item col-12 col-lg-4">
+                    <div class="service-item__img text-center">
+                        <img src="images/ico-ecommerce.svg">
+                    </div>
+                    <h3>e-commerce</h3>
+                    <p class="service-item__desc">Expanding your business to trade online is no sweat for us!</p>
+                </div>
+
+                <div class="service-item col-12 col-lg-4">
+                    <div class="service-item__img text-center">
+                        <img src="images/ico-www.svg">
+                    </div>
+                    <h3>www.</h3>
+                    <p class="service-item__desc">Premium Australian web-hosting on SSD servers.</p>
+                </div>
+
+                <div class="service-item col-12 col-lg-4">
+                    <div class="service-item__img text-center">
+                        <img src="images/ico-support.svg">
+                    </div>
+                    <h3>support</h3>
+                    <p class="service-item__desc">Visual Syrup is with you every step of the way.</p>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="section-service section-service--primary" id="portfolio">
+        <div class="container">
+            <div class="row">
                 <div class="col-12 col-lg-6">
-                    <div id="lightgallery" class="section-portfolio__img">
-                        <a href="images/portfolio_1.jpg">
-                            <img src="images/portfolio_1.jpg">
-                        </a>
-                        <a href="images/portfolio_2.jpg">
-                            <img src="images/portfolio_1.jpg">
-                        </a>
-                        <a href="images/portfolio_3.jpg">
-                            <img src="images/portfolio_1.jpg">
-                        </a>
-                    </div>
+                    <h3>01</h3>
                 </div>
-                <div class="col-12 col-lg-6 d-flex justify-content-center">
-                    <div class="section-portfolio__text pt-4 pt-lg-0">
-                        <h2>Delor <i>(www.delor.cz)</i></h2>
-                        <p class="section-portfolio__text__info pt-2">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin in tellus sit amet nibh
-                            dignissim sagittis. Sed convallis magna eu sem. Vestibulum fermentum tortor id mi. Integer
-                            imperdiet lectus quis justo. Pellentesque pretium lectus id turpis. Fusce aliquam vestibulum
-                            ipsum.
-                        </p>
-                    <div class="section-portfolio__text__tags">
-                        <ul>
-                            <li>#css</li>
-                            <li>#html</li>
-                            <li>#javascript</li>
-                        </ul>
-                    </div>
+                <div class="col-12 col-lg-6 service-info">
+                    <h4>
+                        Website design & development
+                    </h4>
+                    <p class="service-info__desc">
+                        <strong>Essential for any business that seeks to attain credibility.</strong>
+                    </p>
+                    <p>
+                        While social platforms are powerful tools for your business, a professionally built website will reinforce trust & confidence in the services that you offer.
+                        We place immense focus on the appearance & functionality of your site to make you look awesome online.
+                    </p>
                     <button class="btn btn--secondary w-100 my-3">
-                        view website
+                        view web work
                     </button>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section-portfolio section-portfolio--secondary">
-        <div class="container-fluid px-lg-0">
-        <div class="row d-flex align-items-center w-100 no-gutters">
-            <div class="col-12 col-lg-6 d-flex justify-content-center order-2 order-lg-1">
-                <div class="section-portfolio__text pt-4 pt-lg-0">
-                    <h2>Monínec <i>(www.moninec.cz)</i></h2>
-                    <p class="section-portfolio__text__info pt-2">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin in tellus sit amet nibh
-                        dignissim sagittis. Sed convallis magna eu sem. Vestibulum fermentum tortor id mi. Integer
-                        imperdiet lectus quis justo. Pellentesque pretium lectus id turpis. Fusce aliquam vestibulum
-                        ipsum.
+    <section class="section-service section-service--gray">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6 service-info order-2 order-lg-1">
+                    <h4 class="text-lg-right">
+                        media
+                    </h4>
+                    <p class="service-info__desc">
+                        <strong>Professional photography & videography to deliver your message.</strong>
                     </p>
-                    <div class="section-portfolio__text__tags">
-                        <ul>
-                            <li>#css</li>
-                            <li>#html</li>
-                            <li>#javascript</li>
-                        </ul>
-                    </div>
-                    <button class="btn btn--primary w-100 my-3">
-                        view website
+                    <p>
+                        Aesthetic appeal is paramount.
+                        Visuals have an unmatched ability to deliver a message that words and text sometimes struggle to convey.
+                        We can help you knock this one out of the park.
+                    </p>
+                    <button class="btn btn--secondary w-100 my-3">
+                        view media work
                     </button>
                 </div>
-            </div>
-            <div class="col-12 col-lg-6 order-1 order-lg-2">
-                <div id="lightgallery2" class="section-portfolio__img">
-                    <a href="images/portfolio_4.jpg">
-                        <img src="images/portfolio_4.jpg">
-                    </a>
-                    <a href="images/portfolio_5.jpg">
-                        <img src="images/portfolio_5.jpg">
-                    </a>
-                    <a href="images/portfolio_6.jpg">
-                        <img src="images/portfolio_6.jpg">
-                    </a>
+                <div class="col-12 col-lg-6 order-1 order-lg-2">
+                    <h3>02</h3>
                 </div>
             </div>
-        </div>
         </div>
     </section>
 
-    <section class="section-portfolio section-portfolio--gray">
-        <div class="container-fluid px-lg-0">
-        <div class="row d-flex align-items-center w-100 no-gutters">
-            <div class="col-12 col-lg-6">
-                <div id="lightgallery3" class="section-portfolio__img">
-                    <a href="images/portfolio_1.jpg">
-                        <img src="images/portfolio_1.jpg">
-                    </a>
-                    <a href="images/portfolio_2.jpg">
-                        <img src="images/portfolio_1.jpg">
-                    </a>
-                    <a href="images/portfolio_3.jpg">
-                        <img src="images/portfolio_1.jpg">
-                    </a>
+    <section class="section-service section-service--secondary">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6">
+                    <h3>03</h3>
                 </div>
-            </div>
-            <div class="col-12 col-lg-6 d-flex justify-content-center">
-                <div class="section-portfolio__text pt-4 pt-lg-0">
-                    <h2>Delor <i>(www.delor.cz)</i></h2>
-                    <p class="section-portfolio__text__info pt-2">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin in tellus sit amet nibh
-                        dignissim sagittis. Sed convallis magna eu sem. Vestibulum fermentum tortor id mi. Integer
-                        imperdiet lectus quis justo. Pellentesque pretium lectus id turpis. Fusce aliquam vestibulum
-                        ipsum.
+                <div class="col-12 col-lg-6 service-info">
+                    <h4>
+                        Graphic design
+                    </h4>
+                    <p class="service-info__desc">
+                        <strong>Premium quality designs for brands that want to be noticed.</strong>
                     </p>
-                    <div class="section-portfolio__text__tags">
-                        <ul>
-                            <li>#css</li>
-                            <li>#html</li>
-                            <li>#javascript</li>
-                        </ul>
-                    </div>
-                    <button class="btn btn--secondary w-100 my-3">
-                        view website
+                    <p>
+                        First impressions count, so when it comes to your business it’s not something you can afford to get wrong.
+                        Whether it’s your logo, your business cards, or even something else, we’ll make sure that you look brilliant and stand out.
+                    </p>
+                    <button class="btn btn--fourth w-100 my-3">
+                        View design work
                     </button>
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="section-about section-about--primary text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="pb-3">THAT’S ENOUGH ABOUT US</h3>
+                    <h4 class="pb-3">We want to hear about you!</h4>
+                    <p>Let’s talk about what you would like to achieve and how we can work together to make it happen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-about section-about--white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <h3 class="pb-3">Contact us!</h3>
+                    <p>
+                        To enquire about any of our services, please use our fast & friendly contact form.
+                        It’s as good as having our personal email address, anything sent through here gets sent straight to a team member.
+                        So rest assured that we have definitely received your message, and we almost always reply within 1 business day.
+                    </p>
+                </div>
+                <div id="contact-form" class="contact-form col-12 col-lg-6">
+                    <%= require('html-loader!./contact-form.html') %>
+                </div>
+            </div>
         </div>
     </section>
 
