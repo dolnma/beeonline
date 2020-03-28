@@ -40,6 +40,9 @@
 
       textarea {
         border-top: rem-calc(3) solid $color-secondary;
+        border-bottom: rem-calc(3) solid $color-secondary;
+        border-right: 0;
+        border-left: 0;
         font-size: rem-calc(14);
         outline: 0;
         padding: rem-calc(15) rem-calc(20) rem-calc(15);
