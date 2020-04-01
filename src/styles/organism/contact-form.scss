@@ -38,14 +38,6 @@
         font-size: rem-calc(12);
       }
 
-      textarea {
-        border-top: rem-calc(3) solid $color-secondary;
-        font-size: rem-calc(14);
-        outline: 0;
-        padding: rem-calc(15) rem-calc(20) rem-calc(15);
-        width: 100%;
-      }
-
       /** float container */
       .float-container {
         box-sizing: border-box;
@@ -55,6 +47,15 @@
         border-top: rem-calc(3) solid $color-secondary;
 
         input {
+          border: none;
+          font-size: rem-calc(14);
+          outline: 0;
+          padding: rem-calc(15) rem-calc(20) rem-calc(15);
+          width: 100%;
+          border-radius: rem-calc(25);
+        }
+
+        textarea {
           border: none;
           font-size: rem-calc(14);
           outline: 0;
@@ -77,7 +78,7 @@
         &.active {
           label {
             //move the x coordinate and reduce size
-            transform: translate(rem-calc(5), rem-calc(3)) scale(.75);
+            transform: translate(rem-calc(5), rem-calc(10)) scale(.75);
           }
         }
       }

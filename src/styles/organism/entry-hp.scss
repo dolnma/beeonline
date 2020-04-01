@@ -8,7 +8,21 @@
   position: relative;
   overflow: hidden;
   @include break(lg) {
-    padding: rem-calc(150) 0;
+    height: 100vh;
+    padding: rem-calc(40) 0;
+  }
+  @include break(lg) {
+    padding: rem-calc(60) 0;
+  }
+  &__left {
+    @include break(lg) {
+      height: 100vh;
+    }
+  }
+  &__right {
+    @include break(lg) {
+      height: 100vh;
+    }
   }
 
   @include break(lg) {
@@ -21,6 +35,12 @@
       width: 0;
       height: 0;
       border-bottom: rem-calc(1200) solid $color-primary;
+      border-left: rem-calc(600) solid transparent;
+    }
+  }
+  @include break(xxl) {
+    &:after{
+      border-bottom: rem-calc(1200) solid $color-primary;
       border-left: rem-calc(900) solid transparent;
     }
   }
@@ -28,8 +48,12 @@
   &__logo {
     position: absolute;
     right: rem-calc(50);
-    bottom: 0;
+    bottom: rem-calc(170);
     z-index: 2;
+    display: none;
+    @include break(lg) {
+      display: flex;
+    }
     span {
       text-transform: uppercase;
       font-size: rem-calc(30);
@@ -41,10 +65,13 @@
 
   h1 {
     color: $white;
-    font-size: rem-calc(60);
+    font-size: rem-calc(50);
     text-transform: uppercase;
     @include break(lg) {
-      font-size: rem-calc(150);
+      font-size: rem-calc(90);
+    }
+    @include break(xxl) {
+      font-size: rem-calc(119);
     }
   }
   p {

@@ -38,6 +38,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'portfolio.html',
       template: Path.resolve(__dirname, 'src/portfolio.html'),
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'ochrana-osobnich-udaju.html',
+      template: Path.resolve(__dirname, 'src/ochrana-osobnich-udaju.html'),
     })
   ],
   resolve: {

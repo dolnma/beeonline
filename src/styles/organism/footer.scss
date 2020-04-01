@@ -4,7 +4,7 @@
   padding: rem-calc(150) 0 rem-calc(30);
 
   a {
-    color: $color-secondary;
+    color: $gray-light;
     text-decoration: none;
   }
   .logo {
@@ -21,5 +21,9 @@
     img {
       max-height: rem-calc(60);
     }
+  }
+  &__copyright {
+    margin-bottom: rem-calc(30);
+    line-height: rem-calc(30);
   }
 }
