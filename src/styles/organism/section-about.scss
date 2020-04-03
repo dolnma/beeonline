@@ -17,6 +17,11 @@
     font-size: rem-calc(37);
     font-weight: bold;
   }
+  &--white {
+    background-image: url("../../images/contact_bg.jpg");
+    background-position: center;
+    background-size: cover;
+  }
 
   &--primary {
     background-color: $color-fourth;

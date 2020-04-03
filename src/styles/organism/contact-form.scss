@@ -55,7 +55,8 @@
         margin-bottom: rem-calc(8);
         position: relative;
         padding-top: rem-calc(10);
-        border-top: rem-calc(3) solid $color-secondary;
+        border: rem-calc(3) solid $color-secondary;
+        background: white;
 
         input {
           border: none;
@@ -63,7 +64,6 @@
           outline: 0;
           padding: rem-calc(15) rem-calc(20) rem-calc(15);
           width: 100%;
-          border-radius: rem-calc(25);
         }
 
         textarea {
@@ -81,7 +81,7 @@
           transform-origin: top left;
           top: 0;
           padding-left: rem-calc(20);
-          transform: translate(0, rem-calc(16)) scale(1);
+          transform: translate(0, rem-calc(22)) scale(1);
           transition: all .1s ease-in-out; //speed
         }
 

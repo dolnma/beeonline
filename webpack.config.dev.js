@@ -6,11 +6,13 @@ const common = require('./webpack.common.js');
 module.exports = merge(common, {
   mode: 'development',
   devtool: 'cheap-eval-source-map',
+  watch: true,
   output: {
     chunkFilename: 'js/[name].chunk.js'
   },
   devServer: {
-    inline: true
+    inline: true,
+    hot: true
   },
   plugins: [
     new Webpack.DefinePlugin({
@@ -21,7 +23,7 @@ module.exports = merge(common, {
     rules: [
       {
         test: /\.js$/,
-        include: Path.resolve(__dirname, '../src'),
+        include: Path.resolve(__dirname, 'src'),
         enforce: 'pre',
         loader: 'eslint-loader',
         options: {
@@ -30,7 +32,7 @@ module.exports = merge(common, {
       },
       {
         test: /\.js$/,
-        include: Path.resolve(__dirname, '../src'),
+        include: Path.resolve(__dirname, 'src'),
         loader: 'babel-loader'
       },
       {

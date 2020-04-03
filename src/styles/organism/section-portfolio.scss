@@ -9,6 +9,12 @@
   h2 {
     padding-bottom: rem-calc(15);
     font-weight: bold;
+    font-size: rem-calc(40);
+    margin-top: rem-calc(20);
+    @include break(lg) {
+      margin-top: 0;
+      font-size: rem-calc(58);
+    }
   }
 
   &__text {

@@ -67,11 +67,15 @@
     color: $white;
     font-size: rem-calc(50);
     text-transform: uppercase;
+    line-height: rem-calc(50);
+    padding-bottom: rem-calc(20);
     @include break(lg) {
       font-size: rem-calc(90);
+      line-height: rem-calc(90);
     }
     @include break(xxl) {
       font-size: rem-calc(119);
+      line-height: rem-calc(120);
     }
   }
   p {
@@ -80,5 +84,9 @@
     border-top: rem-calc(2) solid $white;
     padding: rem-calc(40) 0 0 0;
     font-size: rem-calc(16);
+    @include break(xxl) {
+      font-size: rem-calc(20);
+      line-height: rem-calc(34);
+    }
   }
 }

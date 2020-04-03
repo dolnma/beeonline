@@ -22,6 +22,16 @@
 
 .header ul li {
   background-color: $color-primary;
+  height: 100%;
+  @include break(md) {
+    &:hover {
+      a {
+        color: $color-secondary;
+      }
+      background-color: white;
+      border-bottom: rem-calc(5) solid $color-secondary;
+    }
+  }
 }
 
 .header li a {
@@ -31,15 +41,15 @@
   color: $color-secondary;
   text-decoration: none;
   text-transform: uppercase;
-  &:hover {
-    color: $color-fifth;
-  }
+  display: flex;
+  align-items: center;
+  height: 100%;
 
   @include break(sm) {
-    padding: rem-calc(10);
+    padding: 0 rem-calc(10);
   }
   @include break(lg) {
-    padding: rem-calc(20);
+    padding: 0 rem-calc(20);
   }
 }
 
