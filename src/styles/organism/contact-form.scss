@@ -12,6 +12,9 @@
 
     &__wrapper {
       padding: rem-calc(40) rem-calc(20);
+      @include break(lg) {
+        padding: 0 rem-calc(20);
+      }
 
       .field .click-input__icon {
         padding: rem-calc(10);
@@ -55,7 +58,7 @@
         margin-bottom: rem-calc(8);
         position: relative;
         padding-top: rem-calc(10);
-        border: rem-calc(3) solid $color-secondary;
+        border-bottom: rem-calc(1) solid $color-secondary;
         background: white;
 
         input {
@@ -72,7 +75,6 @@
           outline: 0;
           padding: rem-calc(15) rem-calc(20) rem-calc(15);
           width: 100%;
-          border-radius: rem-calc(25);
         }
 
         label {

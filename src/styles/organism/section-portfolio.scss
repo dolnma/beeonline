@@ -13,7 +13,7 @@
     margin-top: rem-calc(20);
     @include break(lg) {
       margin-top: 0;
-      font-size: rem-calc(58);
+      font-size: rem-calc(52);
     }
   }
 
@@ -21,8 +21,19 @@
     max-width: rem-calc(500);
 
     &__www {
-      font-size: rem-calc(14);
-      padding-bottom: rem-calc(15);
+      font-size: rem-calc(20);
+
+      a {
+        color: $color-secondary;
+        text-decoration: none;
+        &:visited,  &:active {
+          color: $black;
+        }
+        &:hover {
+          border-bottom: rem-calc(3) solid $color-primary;
+          color: $black;
+        }
+      }
     }
 
     &__tags {
