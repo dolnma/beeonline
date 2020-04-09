@@ -75,6 +75,10 @@
           outline: 0;
           padding: rem-calc(15) rem-calc(20) rem-calc(15);
           width: 100%;
+          &::placeholder {
+            font-size: rem-calc(12);
+            line-height: rem-calc(14);
+          }
         }
 
         label {

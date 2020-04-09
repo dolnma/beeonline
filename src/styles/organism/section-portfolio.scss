@@ -30,8 +30,7 @@
           color: $black;
         }
         &:hover {
-          border-bottom: rem-calc(3) solid $color-primary;
-          color: $black;
+          color: $color-primary;
         }
       }
     }
